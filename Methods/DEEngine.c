@@ -59,7 +59,7 @@ void SO_DEEngineBest1Bin(
 
 /* Crossover for DE/Best/1/Bin/Simple Variant. */
 void SO_DEEngineBest1BinSimple(
-                        const SO_TDim n,						/* Dimensionality of problem. */
+                        const SO_TDim n,				/* Dimensionality of problem. */
 						const SO_TElm CR,				/* Crossover probability. */
 						const SO_TElm *F,				/* Differential weight. */
 						SO_TElm *x,						/* Destination vector. */
