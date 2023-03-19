@@ -46,62 +46,62 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for different DE variants. */
-//	void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
-//								SO_TDim n,						/* Dimensionality of problem. */
-//								const SO_TElm CR,				/* Crossover probability. */
-//								const SO_TElm *F,				/* Differential weight. */
-//								SO_TElm *x,						/* Destination vector. */
-//								const SO_TElm *g,				/* Best vector. */
-//								const size_t numAgents,			/* Number of agents. */
-//								const SO_TElm **agents,			/* All agent vectors. */
-//								struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
+    void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
+                                SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TElm CR,				/* Crossover probability. */
+                                const SO_TElm *F,				/* Differential weight. */
+                                SO_TElm *x,						/* Destination vector. */
+                                const SO_TElm *g,				/* Best vector. */
+                                const size_t numAgents,			/* Number of agents. */
+                                const SO_TElm **agents,			/* All agent vectors. */
+                                struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Best/1/Bin Variant. */
-//	void SO_DEEngineBest1Bin(	SO_TDim n,						/* Dimensionality of problem. */
-//								const SO_TElm CR,				/* Crossover probability. */
-//								const SO_TElm *F,				/* Differential weight (vector). */
-//								SO_TElm *x,						/* Destination vector. */
-//								const SO_TElm *g,				/* Best vector. */
-//								const size_t numAgents,			/* Number of agents. */
-//								const SO_TElm **agents,			/* All agent vectors. */
-//								struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
+    void SO_DEEngineBest1Bin(	SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TElm CR,				/* Crossover probability. */
+                                const SO_TElm *F,				/* Differential weight (vector). */
+                                SO_TElm *x,						/* Destination vector. */
+                                const SO_TElm *g,				/* Best vector. */
+                                const size_t numAgents,			/* Number of agents. */
+                                const SO_TElm **agents,			/* All agent vectors. */
+                                struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Best/1/Bin/Simple Variant. */
-//	void SO_DEEngineBest1BinSimple(
-//								SO_TDim n,						/* Dimensionality of problem. */
-//								const SO_TElm CR,				/* Crossover probability. */
-//								const SO_TElm *F,				/* Differential weight (vector). */
-//								SO_TElm *x,						/* Destination vector. */
-//								const SO_TElm *g,				/* Best vector. */
-//								const size_t numAgents,			/* Number of agents. */
-//								const SO_TElm **agents,			/* All agent vectors. */
-//								struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
+    void SO_DEEngineBest1BinSimple(
+                                SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TElm CR,				/* Crossover probability. */
+                                const SO_TElm *F,				/* Differential weight (vector). */
+                                SO_TElm *x,						/* Destination vector. */
+                                const SO_TElm *g,				/* Best vector. */
+                                const size_t numAgents,			/* Number of agents. */
+                                const SO_TElm **agents,			/* All agent vectors. */
+                                struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Rand/1/Bin Variant. */
-//	void SO_DEEngineRand1Bin(	SO_TDim n,						/* Dimensionality of problem. */
-//								const SO_TElm CR,				/* Crossover probability. */
-//								const SO_TElm *F,				/* Differential weight (vector). */
-//								SO_TElm *x,						/* Destination vector. */
-//								const size_t numAgents,			/* Number of agents. */
-//								const SO_TElm **agents,			/* All agent vectors. */
-//								struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
+    void SO_DEEngineRand1Bin(	SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TElm CR,				/* Crossover probability. */
+                                const SO_TElm *F,				/* Differential weight (vector). */
+                                SO_TElm *x,						/* Destination vector. */
+                                const size_t numAgents,			/* Number of agents. */
+                                const SO_TElm **agents,			/* All agent vectors. */
+                                struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Rand/1/Bin Either-Or Variant. */
-//	void SO_DEEngineRand1BinEO(	SO_TDim n,						/* Dimensionality of problem. */
-//								const SO_TElm CR,				/* Crossover probability. */
-//								const SO_TElm *F,				/* Differential weight (vector). */
-//								SO_TElm *x,						/* Destination vector. */
-//								const size_t numAgents,			/* Number of agents. */
-//								const SO_TElm **agents,			/* All agent vectors. */
-//								struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
+    void SO_DEEngineRand1BinEO(	SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TElm CR,				/* Crossover probability. */
+                                const SO_TElm *F,				/* Differential weight (vector). */
+                                SO_TElm *x,						/* Destination vector. */
+                                const size_t numAgents,			/* Number of agents. */
+                                const SO_TElm **agents,			/* All agent vectors. */
+                                struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/*----------------------------------------------------------------*/
 
