@@ -19,38 +19,10 @@
 
 /* ---------------------------------------------------------------- */
 
-/* Crossover for different DE variants. */
-void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
-							SO_TDim n,						/* Dimensionality of problem. */
-							const SO_TElm CR,				/* Crossover probability. */
-							const SO_TElm *F,				/* Differential weight. */
-							SO_TElm *x,						/* Destination vector. */
-							const SO_TElm *g,				/* Best vector. */
-							const size_t numAgents,			/* Number of agents. */
-							const SO_TElm **agents,			/* All agent vectors. */
-							struct RO_RandSet *randSet)		/* For picking random and distinct agents. */
-{
-	switch (variant)
-	{
-	case SO_kDECrossoverBest1Bin :
-		SO_DEEngineBest1Bin(n, CR, F, x, g, numAgents, agents, randSet); break;
-
-	case SO_kDECrossoverBest1BinSimple :
-		SO_DEEngineBest1BinSimple(n, CR, F, x, g, numAgents, agents, randSet); break;
-
-	case SO_kDECrossoverRand1BinEO :
-		SO_DEEngineRand1BinEO(n, CR, F, x, numAgents, agents, randSet); break;
-
-	case SO_kDECrossoverRand1Bin :
-	default :
-		SO_DEEngineRand1Bin(n, CR, F, x, numAgents, agents, randSet); break;
-	}
-}
-
-/* ---------------------------------------------------------------- */
-
 /* Crossover for DE/Best/1/Bin Variant. */
-void SO_DEEngineBest1Bin(	SO_TDim n,					/* Dimensionality of problem. */
+
+void SO_DEEngineBest1Bin(
+                        const SO_TDim n,				/* Dimensionality of problem. */
 						const SO_TElm CR,				/* Crossover probability. */
 						const SO_TElm *F,				/* Differential weight. */
 						SO_TElm *x,						/* Destination vector. */
@@ -207,6 +179,36 @@ void SO_DEEngineRand1BinEO(	SO_TDim n,					/* Dimensionality of problem. */
 			}
 		}
 	}
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Crossover for different DE variants. */
+void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
+                            SO_TDim n,						/* Dimensionality of problem. */
+                            const SO_TElm CR,				/* Crossover probability. */
+                            const SO_TElm *F,				/* Differential weight. */
+                            SO_TElm *x,						/* Destination vector. */
+                            const SO_TElm *g,				/* Best vector. */
+                            const size_t numAgents,			/* Number of agents. */
+                            const SO_TElm **agents,			/* All agent vectors. */
+                            struct RO_RandSet *randSet)		/* For picking random and distinct agents. */
+{
+    switch (variant)
+    {
+    case SO_kDECrossoverBest1Bin :
+        SO_DEEngineBest1Bin(n, CR, F, x, g, numAgents, agents, randSet); break;
+
+    case SO_kDECrossoverBest1BinSimple :
+        SO_DEEngineBest1BinSimple(n, CR, F, x, g, numAgents, agents, randSet); break;
+
+    case SO_kDECrossoverRand1BinEO :
+        SO_DEEngineRand1BinEO(n, CR, F, x, numAgents, agents, randSet); break;
+
+    case SO_kDECrossoverRand1Bin :
+    default :
+        SO_DEEngineRand1Bin(n, CR, F, x, numAgents, agents, randSet); break;
+    }
 }
 
 /* ---------------------------------------------------------------- */

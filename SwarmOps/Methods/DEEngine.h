@@ -43,9 +43,9 @@ extern "C" {
 
 //	const char** SO_kNameDECrossover[];
 
-	/* ---------------------------------------------------------------- */
-
-	/* Crossover for different DE variants. */
+    /* ---------------------------------------------------------------- */
+#ifdef WIN32
+    /* Crossover for different DE variants. */
     void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
                                 SO_TDim n,						/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
@@ -104,6 +104,7 @@ extern "C" {
                                 struct RO_RandSet *randSet);	/* For picking random and distinct agents. */
 
 	/*----------------------------------------------------------------*/
+#endif /* WIN32 */
 
 #ifdef  __cplusplus
 } /* extern "C" end */
