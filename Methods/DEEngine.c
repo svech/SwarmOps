@@ -140,12 +140,12 @@ void SO_DEEngineRand1Bin(
 /* Crossover for DE/Rand/1/Bin Either-Or Variant. */
 void SO_DEEngineRand1BinEO(
                         const SO_TDim n,				/* Dimensionality of problem. */
-						const SO_TElm CR,				/* Crossover probability. */
-						const SO_TElm *F,				/* Differential weight. */
-						SO_TElm *x,						/* Destination vector. */
-						const size_t numAgents,			/* Number of agents. */
-						const SO_TElm **agents,			/* All agent vectors. */
-						struct RO_RandSet *randSet)		/* For picking random and distinct agents. */
+                        const SO_TElm CR,				/* Crossover probability. */
+                        const SO_TElm *F,				/* Differential weight. */
+                        SO_TElm *x,						/* Destination vector. */
+                        const size_t numAgents,			/* Number of agents. */
+                        const SO_TElm **agents,			/* All agent vectors. */
+                        struct RO_RandSet *randSet)		/* For picking random and distinct agents. */
 {
 	/* Iteration variable. */
 	size_t k;

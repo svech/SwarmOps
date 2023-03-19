@@ -59,7 +59,7 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* The optimization method. */
-	SO_TFitness SO_PSO(const SO_TElm *param, void /*const*/* context, const SO_TFitness fitnessLimit);
+    SO_TFitness SO_PSO(const SO_TElm *param, void const* context, const SO_TFitness fitnessLimit);
 
 	/*----------------------------------------------------------------*/
 

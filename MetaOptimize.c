@@ -26,22 +26,22 @@
 /* ---------------------------------------------------------------- */
 
 struct SO_MetaSolution SO_MetaOptimize
-	(size_t metaMethodId,
-	size_t metaNumRuns,
-	size_t metaNumIterations,
-	void *metaSettings,
-	size_t methodId,
-	size_t numRuns,
-	size_t numIterations,
-	void *settings,
-	SO_FProblem f,
-	SO_FGradient fGradient,
-	void *fContext,
-	SO_TDim n,
-	SO_TElm const* lowerInit,
-	SO_TElm const* upperInit,
-	SO_TElm const* lowerBound,
-	SO_TElm const* upperBound)
+    (size_t metaMethodId,
+    size_t metaNumRuns,
+    size_t metaNumIterations,
+    void *metaSettings,
+    size_t methodId,
+    size_t numRuns,
+    size_t numIterations,
+    void *settings,
+    SO_FProblem f,
+    SO_FGradient fGradient,
+    const void *fContext,
+    SO_TDim n,
+    SO_TElm const* lowerInit,
+    SO_TElm const* upperInit,
+    SO_TElm const* lowerBound,
+    SO_TElm const* upperBound)
 {
 	/* The solution-struct that is to be returned. */
 	struct SO_MetaSolution metaSolution;

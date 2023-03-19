@@ -147,7 +147,7 @@ SO_TElm SO_DETPF(SO_TElm const* param, const size_t i, const size_t kNumIteratio
  * - Return best result from the optimization.
  */
 
-SO_TFitness SO_DETP(const SO_TElm *param, void *context, const SO_TFitness fitnessLimit)
+SO_TFitness SO_DETP(const SO_TElm *param, const void *context, const SO_TFitness fitnessLimit)
 {
 	/* Cast void-ptr context to correct struct-type. */
 	struct SO_MethodContext *c = (struct SO_MethodContext*) context;

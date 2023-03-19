@@ -77,7 +77,7 @@ SO_TElm SO_MOLPhi(SO_TElm const* param)
  * - Return best result from the optimization.
  */
 
-SO_TFitness SO_MOL(const SO_TElm *param, void *context, const SO_TFitness fitnessLimit)
+SO_TFitness SO_MOL(const SO_TElm *param, const void *context, const SO_TFitness fitnessLimit)
 {
 	/* Cast void-ptr context to correct struct-type. */
 	struct SO_MethodContext *c = (struct SO_MethodContext*) context;

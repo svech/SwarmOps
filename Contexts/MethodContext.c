@@ -20,17 +20,17 @@
 /* ---------------------------------------------------------------- */
 
 struct SO_MethodContext SO_MakeMethodContext
-	(SO_FProblem f,
-	SO_FGradient fGradient,
-	void *fContext,
-	SO_TDim fDim,
-	SO_TElm const* lowerInit,
-	SO_TElm const* upperInit,
-	SO_TElm const* lowerBound,
-	SO_TElm const* upperBound,
-	size_t numIterations,
-	void *settings,
-	struct SO_FitnessTrace *fitnessTrace)
+    (SO_FProblem f,
+    SO_FGradient fGradient,
+    const void *fContext,
+    SO_TDim fDim,
+    SO_TElm const* lowerInit,
+    SO_TElm const* upperInit,
+    SO_TElm const* lowerBound,
+    SO_TElm const* upperBound,
+    size_t numIterations,
+    void *settings,
+    struct SO_FitnessTrace *fitnessTrace)
 {
 	struct SO_MethodContext c;
 

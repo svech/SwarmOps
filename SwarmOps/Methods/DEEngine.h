@@ -95,7 +95,7 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Rand/1/Bin Either-Or Variant. */
-    void SO_DEEngineRand1BinEO(	const SO_TDim n,				/* Dimensionality of problem. */
+    void SO_DEEngineRand1BinEO(const SO_TDim n, 				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight (vector). */
                                 SO_TElm *x,						/* Destination vector. */
