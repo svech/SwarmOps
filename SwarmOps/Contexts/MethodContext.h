@@ -60,7 +60,7 @@ extern "C" {
 	struct SO_MethodContext SO_MakeMethodContext
 		(SO_FProblem f,
 		SO_FGradient fGradient,
-		void const* fContext,
+		void /*const*/* fContext,
 		SO_TDim fDim,
 		SO_TElm const* lowerInit,
 		SO_TElm const* upperInit,

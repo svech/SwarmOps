@@ -84,13 +84,10 @@ void SO_WriteFitnessTrace(struct SO_FitnessTrace *trc)
 	if (SO_UseFitnessTrace(trc))
 	{
 		size_t i;
-		errno_t err;
-		FILE *stream;
+		FILE *stream = fopen(trc->filename, "w");
 
 		/* Create file. */
-		err = fopen_s(&stream, trc->filename, "w");
-
-		if (err == 0)
+		if (stream != NULL)
 		{
 			/* Write trace to file. */
 			for (i=0; i<trc->numIterations; i++)

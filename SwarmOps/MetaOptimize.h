@@ -47,7 +47,7 @@ extern "C" {
 		/* Problem layer. */
 		SO_FProblem f,					/* Problem to be optimized. */
 		SO_FGradient fGradient,			/* Gradient of the problem to be optimized. */
-		void const* fContext,			/* Context of the problem to be optimized. */
+		void /*const*/* fContext,			/* Context of the problem to be optimized. */
 		SO_TDim n,						/* Dimensionality of the problem to be optimized. */
 		SO_TElm const* lowerInit,		/* Lower initialization boundary. */
 		SO_TElm const* upperInit,		/* Upper initialization boundary. */

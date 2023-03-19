@@ -46,10 +46,10 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Type for a fitness function. That is, an optimization problem. */
-	typedef SO_TFitness (*SO_FProblem) (const SO_TElm *x, void *context, const SO_TFitness fitnessLimit);
+	typedef SO_TFitness (*SO_FProblem) (/*const*/ SO_TElm *x, void *context, const SO_TFitness fitnessLimit);
 
 	/* Type for a gradient function for an optimization problem. */
-	typedef SO_TDim (*SO_FGradient) (const SO_TElm *x, SO_TElm *v, void *context);
+	typedef SO_TDim (*SO_FGradient) (/*const*/ SO_TElm *x, SO_TElm *v, void *context);
 
 	/* Type for an optimization method. This is identical to the type for
 	 * an optimization problem, which makes optimizing the behavioural parameters

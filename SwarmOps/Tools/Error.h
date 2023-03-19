@@ -34,7 +34,7 @@ extern "C" {
 
 	/*----------------------------------------------------------------*/
 
-	const char SO_kErrMsgMemory[];		/* Out of memory message. */
+    extern const char SO_kErrMsgMemory[];		/* Out of memory message. */
 
 	/*----------------------------------------------------------------*/
 
