@@ -36,7 +36,7 @@ struct SO_MetaSolution SO_MetaOptimize
     void *settings,
     SO_FProblem f,
     SO_FGradient fGradient,
-    const void *fContext,
+    void *fContext,
     SO_TDim n,
     SO_TElm const* lowerInit,
     SO_TElm const* upperInit,

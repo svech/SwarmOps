@@ -58,17 +58,17 @@ extern "C" {
 	/* Make and return a context-struct.
 	 * Parameters correspond to the struct description above. */
 	struct SO_MethodContext SO_MakeMethodContext
-		(SO_FProblem f,
-		SO_FGradient fGradient,
-        void const* fContext,
-		SO_TDim fDim,
-		SO_TElm const* lowerInit,
-		SO_TElm const* upperInit,
-		SO_TElm const* lowerBound,
-		SO_TElm const* upperBound,
-		size_t numIterations,
-		void *settings,
-		struct SO_FitnessTrace *fitnessTrace);
+        (SO_FProblem f,
+        SO_FGradient fGradient,
+        void *fContext,
+        SO_TDim fDim,
+        SO_TElm const* lowerInit,
+        SO_TElm const* upperInit,
+        SO_TElm const* lowerBound,
+        SO_TElm const* upperBound,
+        size_t numIterations,
+        void *settings,
+        struct SO_FitnessTrace *fitnessTrace);
 
 	/* Free memory allocated by SO_MakeMethodContext(),
 	 * but not memory for the struct itself, the boundaries, etc. */

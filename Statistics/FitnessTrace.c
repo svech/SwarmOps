@@ -91,8 +91,8 @@ void SO_WriteFitnessTrace(struct SO_FitnessTrace *trc)
 		{
 			/* Write trace to file. */
 			for (i=0; i<trc->numIterations; i++)
-			{
-				fprintf(stream, "%d %e\n", i+1, trc->trace[i] / trc->numRuns);
+            {
+                fprintf(stream, "%d %e\n", i+1, trc->trace[i] / trc->numRuns);
 			}
 
 			/* Close file. */

@@ -22,7 +22,7 @@
 struct SO_MethodContext SO_MakeMethodContext
     (SO_FProblem f,
     SO_FGradient fGradient,
-    const void *fContext,
+    void *fContext,
     SO_TDim fDim,
     SO_TElm const* lowerInit,
     SO_TElm const* upperInit,
