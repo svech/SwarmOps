@@ -47,7 +47,7 @@ extern "C" {
 #ifdef WIN32
     /* Crossover for different DE variants. */
     void SO_DEEngineCrossover(	const size_t variant,			/* Which DE variant to use. */
-                                SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TDim n,				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight. */
                                 SO_TElm *x,						/* Destination vector. */
@@ -59,7 +59,7 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Best/1/Bin Variant. */
-    void SO_DEEngineBest1Bin(	SO_TDim n,						/* Dimensionality of problem. */
+    void SO_DEEngineBest1Bin(	const SO_TDim n,				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight (vector). */
                                 SO_TElm *x,						/* Destination vector. */
@@ -72,7 +72,7 @@ extern "C" {
 
 	/* Crossover for DE/Best/1/Bin/Simple Variant. */
     void SO_DEEngineBest1BinSimple(
-                                SO_TDim n,						/* Dimensionality of problem. */
+                                const SO_TDim n,				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight (vector). */
                                 SO_TElm *x,						/* Destination vector. */
@@ -84,7 +84,7 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Rand/1/Bin Variant. */
-    void SO_DEEngineRand1Bin(	SO_TDim n,						/* Dimensionality of problem. */
+    void SO_DEEngineRand1Bin(	const SO_TDim n,				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight (vector). */
                                 SO_TElm *x,						/* Destination vector. */
@@ -95,7 +95,7 @@ extern "C" {
 	/* ---------------------------------------------------------------- */
 
 	/* Crossover for DE/Rand/1/Bin Either-Or Variant. */
-    void SO_DEEngineRand1BinEO(	SO_TDim n,						/* Dimensionality of problem. */
+    void SO_DEEngineRand1BinEO(	const SO_TDim n,				/* Dimensionality of problem. */
                                 const SO_TElm CR,				/* Crossover probability. */
                                 const SO_TElm *F,				/* Differential weight (vector). */
                                 SO_TElm *x,						/* Destination vector. */
